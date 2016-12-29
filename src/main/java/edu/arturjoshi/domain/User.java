@@ -1,17 +1,13 @@
 package edu.arturjoshi.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import edu.arturjoshi.authentication.UserRegistrationDto;
+import edu.arturjoshi.authentication.dto.UserRegistrationDto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 
 /**
  * Created by arturjoshi on 25-Dec-16.

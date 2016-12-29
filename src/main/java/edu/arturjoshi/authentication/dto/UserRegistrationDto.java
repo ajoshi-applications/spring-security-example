@@ -1,4 +1,4 @@
-package edu.arturjoshi.authentication;
+package edu.arturjoshi.authentication.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
