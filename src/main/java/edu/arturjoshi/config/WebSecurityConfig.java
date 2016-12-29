@@ -29,6 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/users", "/securitycontext", "/register", "/authenticate")
                 .permitAll()
+                .antMatchers("/users/{userId}").access("#userId == principal.id.toString()")
                 .anyRequest().authenticated()
                 .and().addFilterBefore(statelessAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .csrf().disable();
